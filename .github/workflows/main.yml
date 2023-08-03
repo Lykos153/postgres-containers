@@ -45,8 +45,6 @@ jobs:
       id: reponame
       run: |
         echo "REPO=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
-    - name: use REPO
-      run: echo "The value of REPO is: ${REPO}"
     - uses: docker/build-push-action@v3
       with:
         context: .
