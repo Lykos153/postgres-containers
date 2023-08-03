@@ -10,7 +10,7 @@ on:
       EXTENSIONS:
         description: 'Postgres extensions to install'
         required: true
-        default: 'cron timescaledb'
+        default: 'pg-stat-kcache set-user'
       TIMESCALEDB_VERSION:
         description: 'TimescaleDB version'
         required: true
